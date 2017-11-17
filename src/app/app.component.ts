@@ -25,6 +25,7 @@ export class AppComponent implements OnInit{
     this.getWallpaper();
     this.getDate();
     this.getWeather();
+    
   }
 
   ngOnInit() {
@@ -45,11 +46,11 @@ export class AppComponent implements OnInit{
   }
 
   getWeather() {
-    Observable.timer(0, 300000) // 5 minutes
+    Observable.timer(0, 600000) // 10 minutes
     .subscribe(() => {
       this.weather.getWeather()
         .subscribe((data) => {
-          console.log(data);
+          console.log(this.dateObj.hours + ":" + this.dateObj.minutes, data);
           this.temp = Math.floor(data.currently.temperature);
           this.conditions = data.currently.summary;
           this.windspeed = Math.floor(data.currently.windSpeed);
