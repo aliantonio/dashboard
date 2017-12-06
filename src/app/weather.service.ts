@@ -10,9 +10,9 @@ export class WeatherService {
 
   constructor(private http: Http) { }
 
-  getWeather() {
+  getWeather(latitude, longitude) {
     let key = "64f8edbe104d92314cf748d5da367cf0";
-    return this.http.get('https://api.darksky.net/forecast/'+key+'/40.518715,-74.412095')
+    return this.http.get('https://api.darksky.net/forecast/'+key+'/'+latitude+','+longitude)
       .timeout(10000)
       .do(this.logResponse)
       .map(this.extractData)
@@ -20,7 +20,7 @@ export class WeatherService {
   }
 
   private logResponse(res: Response) {
-    console.log(res);
+    //console.log(res);
   }
 
   private extractData(res: Response) {

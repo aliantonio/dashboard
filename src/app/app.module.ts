@@ -3,23 +3,27 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
-import { Ng2CompleterModule } from "ng2-completer";
+import { HotkeyModule } from 'angular2-hotkeys';
 
 import { AppComponent } from './app.component';
 
 import { WeatherService } from './weather.service';
 import { DateService } from './date.service';
+import { FilterPipe } from './filter.pipe';
+import { SortPipe } from './sort.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilterPipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,
     HttpModule,
     HttpClientModule,
     FormsModule,
-    Ng2CompleterModule
+    HotkeyModule.forRoot()
   ],
   providers: [WeatherService, DateService],
   bootstrap: [AppComponent]

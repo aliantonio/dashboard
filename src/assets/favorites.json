@@ -1,0 +1,34 @@
+{
+    "links": [
+        {
+            "class":"header",
+            "name":"*Favorites",
+            "url":"#"
+        },
+        {
+            "class":"non-header",
+            "name":"Search",
+            "url":"https://www.google.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Facebook",
+            "url":"https://www.facebook.com/home.php"
+        },
+        {
+            "class":"non-header",
+            "name":"Twitter",
+            "url":"https://twitter.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Reddit",
+            "url":"https://pay.reddit.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Android Police",
+            "url":"http://www.androidpolice.com/"
+        }
+    ]
+}
