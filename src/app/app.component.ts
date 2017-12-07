@@ -55,6 +55,8 @@ export class AppComponent implements OnInit{
         let longitude = position.coords.longitude;
         this.subscribeLocation(latitude, longitude);
         this.getWeather(latitude, longitude);
+      }, error => { 
+        console.log(error);
       });
     }
   }
