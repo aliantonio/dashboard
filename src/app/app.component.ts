@@ -76,7 +76,7 @@ export class AppComponent implements OnInit{
 
 
   getLinks() {
-    return this.http.get('../assets/sites.json')
+    return this.http.get('../dashboards/assets/sites.json')
     .timeout(10000)
     .do(this.logResponse)
     .map(this.extractData)
@@ -84,7 +84,7 @@ export class AppComponent implements OnInit{
   }
 
   getFavorites() {
-    return this.http.get('../assets/favorites.json')
+    return this.http.get('../dashboards/assets/favorites.json')
     .timeout(10000)
     .do(this.logResponse)
     .map(this.extractData)
@@ -94,8 +94,8 @@ export class AppComponent implements OnInit{
   getWallpaper() {
     Observable.timer(0,3600000).subscribe(x => { // updates every 60 minutes
       let num = this.randomize();
-      //return this.background = this.sanitizer.bypassSecurityTrustStyle('url(../assets/images/'+num+'.jpg)');
-      return this.background = this.sanitizer.bypassSecurityTrustStyle('url(http://asliantonio.com/dashboards/home/stylesheets/images/spotlight/'+num+'.jpg)');
+      return this.background = this.sanitizer.bypassSecurityTrustStyle('url(../dashboards/assets/images/'+num+'.jpg)');
+      //return this.background = this.sanitizer.bypassSecurityTrustStyle('url(http://asliantonio.com/dashboards/home/stylesheets/images/spotlight/'+num+'.jpg)');
     });
   }
 
@@ -166,7 +166,7 @@ export class AppComponent implements OnInit{
       data => {
         console.log(data.results);
         this.city = data.results[0].address_components[2].long_name;
-        this.state = data.results[0].address_components[4].short_name;
+        this.state = data.results[0].address_components[5].short_name;
         this.zipcode = data.results[0].address_components[6].short_name;
       },
       err => {
@@ -192,7 +192,7 @@ export class AppComponent implements OnInit{
     this.isOpen = true;
   }
 
-  private closeNav() {
+  closeNav() {
     document.getElementById("sidenav").style.width = "0";
     document.getElementById("page-wrapper").style.marginLeft = "0";
     this.isOpen = false;
