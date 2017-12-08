@@ -37,15 +37,15 @@ export class AppComponent implements OnInit{
   isOpen: boolean = false;
 
   constructor(private sanitizer:DomSanitizer, private http: Http, private weather: WeatherService, private date: DateService, private _hotkeysService: HotkeysService) {
-    this.getWallpaper();
-    this.getDate();
-    this.subscribeFavorites();
-    this.subscribeAllLinks();
-    this.setHotKeys();
   }
 
   ngOnInit() {
+    this.subscribeFavorites();
+    this.subscribeAllLinks();
+    this.getWallpaper();
+    this.getDate();
     this.getCoordinates();
+    this.setHotKeys();
   }
 
   getCoordinates() {
