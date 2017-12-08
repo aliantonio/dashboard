@@ -48,6 +48,10 @@ export class AppComponent implements OnInit{
     this.setHotKeys();
   }
 
+  focus() {
+    this.oElement.nativeElement.focus();
+  }
+
   getCoordinates() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
@@ -188,8 +192,8 @@ export class AppComponent implements OnInit{
   }
 
   private openNav() {
-    document.getElementById("sidenav").style.width = "250px";
-    document.getElementById("page-wrapper").style.marginLeft = "250px";
+    document.getElementById("sidenav").style.width = "215px";
+    document.getElementById("page-wrapper").style.marginLeft = "215px";
     this.oElement.nativeElement.focus();
     this.isOpen = true;
   }

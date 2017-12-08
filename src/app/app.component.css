@@ -93,7 +93,7 @@ html, body {
 
 .sidenav a {
 	font-family: 'Roboto', sans-serif !important;
-    padding: 5px 5px 5px 40px;
+    padding: 5px 5px 5px 20px;
     text-decoration: none;
     font-size: 15px;
     color: #818181;
@@ -115,7 +115,7 @@ html, body {
 
 .sidenav .header {
 	font-size: 20px;
-	padding: 5px 5px 5px 25px;
+	padding: 5px 5px 5px 5px;
 }
 
 #main {

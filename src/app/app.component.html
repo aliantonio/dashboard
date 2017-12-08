@@ -8,8 +8,8 @@
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
         <input type="text" class="search-input" #searchInput name="query" [(ngModel)]="query" placeholder="Search for..." autofocus>
-        <a href="{{data.url}}" class="{{data.class}}" target="_blank" *ngFor="let data of favorites | sort:'name' | filter : query" (click)="query = '';closeNav();">{{data.name}}</a>
-        <a href="{{data.url}}" class="{{data.class}}" target="_blank" *ngFor="let data of allLinks | sort:'name' | filter : query" (click)="query = '';closeNav();">{{data.name}}</a>
+        <a href="{{data.url}}" class="{{data.class}}" target="_blank" *ngFor="let data of favorites | sort:'name' | filter : query" (click)="query = '';focus();">{{data.name}}</a>
+        <a href="{{data.url}}" class="{{data.class}}" target="_blank" *ngFor="let data of allLinks | sort:'name' | filter : query" (click)="query = '';focus();">{{data.name}}</a>
     </div>
 
     <div class="weather" (click)="goToWeather()">
