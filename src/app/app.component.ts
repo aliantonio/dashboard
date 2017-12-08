@@ -78,7 +78,7 @@ export class AppComponent implements OnInit{
 
 
   getLinks() {
-    return this.http.get('../dashboards/assets/sites.json')
+    return this.http.get('../dashboard/assets/sites.json')
     .timeout(10000)
     .do(this.logResponse)
     .map(this.extractData)
@@ -86,7 +86,7 @@ export class AppComponent implements OnInit{
   }
 
   getFavorites() {
-    return this.http.get('../dashboards/assets/favorites.json')
+    return this.http.get('../dashboard/assets/favorites.json')
     .timeout(10000)
     .do(this.logResponse)
     .map(this.extractData)
@@ -96,8 +96,8 @@ export class AppComponent implements OnInit{
   getWallpaper() {
     Observable.timer(0,3600000).subscribe(x => { // updates every 60 minutes
       let num = this.randomize();
-      return this.background = this.sanitizer.bypassSecurityTrustStyle('url(../dashboards/assets/images/'+num+'.jpg)');
-      //return this.background = this.sanitizer.bypassSecurityTrustStyle('url(http://asliantonio.com/dashboards/home/stylesheets/images/spotlight/'+num+'.jpg)');
+      return this.background = this.sanitizer.bypassSecurityTrustStyle('url(../dashboard/assets/images/'+num+'.jpg)');
+      //return this.background = this.sanitizer.bypassSecurityTrustStyle('url(http://asliantonio.com/dashboard/home/stylesheets/images/spotlight/'+num+'.jpg)');
     });
   }
 

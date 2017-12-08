@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
 import { HotkeyModule } from 'angular2-hotkeys';
@@ -31,6 +31,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpModule,
     HttpClientModule,
+    JsonpModule,
     FormsModule,
     HotkeyModule.forRoot()
   ],
