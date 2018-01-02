@@ -509,6 +509,11 @@
             "class":"non-header",
             "name":"Fitness",
             "url":"http://asliantonio.com/fitness/"
+        },
+        {
+            "class":"non-header",
+            "name":"Binance",
+            "url":"https://www.binance.com/"
         }
  ]
 }
