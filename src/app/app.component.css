@@ -8,7 +8,7 @@ html, body {
 }
 
 .bg-photo {
-    background-color: #394146;
+    background-color: #394146 !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
