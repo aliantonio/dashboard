@@ -85,7 +85,7 @@ html, body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    /*background-color: #111;*/
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 5%; /* 60px */
@@ -96,7 +96,8 @@ html, body {
     padding: 5px 5px 5px 20px;
     text-decoration: none;
     font-size: 15px;
-    color: #818181;
+	/*color: #818181;*/
+	color: #fff;
     display: block;
     transition: 0.3s;
 }
@@ -138,4 +139,25 @@ html, body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
