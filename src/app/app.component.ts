@@ -101,7 +101,7 @@ export class AppComponent implements OnInit{
     Observable.timer(0,3600000).subscribe(x => { // updates every 60 minutes
       let num = this.randomize();
       return this.background = this.sanitizer.bypassSecurityTrustStyle('url(../dashboard/assets/images/'+num+'.jpg)');
-      //return this.background = this.sanitizer.bypassSecurityTrustStyle('url(http://asliantonio.com/dashboard/home/stylesheets/images/spotlight/'+num+'.jpg)');
+      //return this.background = this.sanitizer.bypassSecurityTrustStyle('url(https://asliantonio.com/dashboard/assets/images/'+num+'.jpg)');
     });
   }
 
@@ -122,6 +122,10 @@ export class AppComponent implements OnInit{
           console.error(err);
       });
     });
+  }
+
+  goToCalendar() {
+    window.open('https://calendar.google.com/calendar/r?tab=cc', '_blank');
   }
 
   goToWeather() {

@@ -12,17 +12,29 @@
         <a href="{{data.url}}" class="{{data.class}}" target="_blank" *ngFor="let data of allLinks | sort:'name' | filter : query" (click)="query = '';focus();">{{data.name}}</a>
     </div>
 
-    <div class="weather" (click)="goToWeather()">
+    <!-- <div class="weather" (click)="goToWeather()">
         <div class="weather-inner">
             {{city}}, {{state}}<canvas id="icon1" class="weather-icon" width="25" height="25"></canvas>{{ temp }}&deg;F
         </div>
         <div class="weather-inner" style="top: 25px;">
             {{ conditions }} - {{ windspeed }}mph winds
         </div>
+    </div> -->
+
+    <div class="owner-name">
+        <span>Anthony Liantonio</span>
     </div>
 
-    <div class="center-div greeting-div">
+    <div class="weather">
+        <div class="weather-inner">
+            <span *ngIf="dateObj" (click)="goToCalendar();">{{ dateObj.hours }}:{{ dateObj.minutes }}, {{ dateObj.dayOfWeek }}, {{ dateObj.month }} {{ dateObj.day }}, {{ dateObj.year }}</span><br>
+            <span (click)="goToWeather();">{{city}}, {{state}}<canvas id="icon1" class="weather-icon" width="25" height="25"></canvas>{{ temp }}&deg;F</span><br>
+            <span (click)="goToWeather();">{{conditions}} - {{windspeed}}mph winds</span>
+        </div>
+    </div>
+
+    <!-- <div class="center-div greeting-div">
         <div class="greeting" *ngIf="dateObj">Good {{ dateObj.timeOfDay }}, Anthony!</div>
         <div class="date-time" *ngIf="dateObj">It's {{ dateObj.hours }}:{{ dateObj.minutes }} on {{ dateObj.dayOfWeek }}, {{ dateObj.month }} {{ dateObj.day }}, {{ dateObj.year }}</div>
-    </div>
+    </div> -->
 </div>
