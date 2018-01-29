@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
 import { HotkeyModule } from 'angular2-hotkeys';
 import { RouterModule, Routes } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     JsonpModule,
     FormsModule,
-    HotkeyModule.forRoot()
+    HotkeyModule.forRoot(),
+    NgbModule.forRoot()
   ],
   providers: [WeatherService, DateService],
   bootstrap: [AppComponent]

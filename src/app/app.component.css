@@ -50,6 +50,13 @@ html, body {
 	font-size: 2em;
 }
 
+.links-inner div {
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	margin: 5px 0;
+}
+
 .owner-name {
 	font-family: 'Roboto', sans-serif !important;
 	font-weight: 300;
@@ -131,6 +138,11 @@ html, body {
 .sidenav .header {
 	font-size: 20px;
 	padding: 5px 5px 5px 5px;
+	line-height: initial;
+}
+
+.non-header, input {
+	line-height: initial;
 }
 
 #main {
@@ -148,6 +160,12 @@ html, body {
 
 .search-input:focus {
 	outline: none;
+}
+
+.links .site-search {
+	width: 120px;
+	margin-left: 35px;
+	padding: 0.175rem 0.75rem;
 }
 
 @media screen and (max-height: 450px) {

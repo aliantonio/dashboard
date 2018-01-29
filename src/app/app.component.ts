@@ -28,6 +28,7 @@ export class AppComponent implements OnInit{
   allLinks: any;
   favorites: any;
   @ViewChild('searchInput') oElement;
+  @ViewChild('oSearch') oSearch;
   query: any;
   city: string;
   state: string;
@@ -35,6 +36,8 @@ export class AppComponent implements OnInit{
   hotkeyOpenNav: Hotkey | Hotkey[];
   hotkeyCloseNav: Hotkey | Hotkey[];
   isOpen: boolean = false;
+  array: string[] = [];
+  map = new Map<string, string>();
 
   constructor(private sanitizer:DomSanitizer, private http: Http, private weather: WeatherService, private date: DateService, private _hotkeysService: HotkeysService) {
   }
@@ -47,6 +50,13 @@ export class AppComponent implements OnInit{
     this.getCoordinates();
     this.setHotKeys();
   }
+
+  search = (text$: Observable<string>) =>
+    text$
+      .debounceTime(100)
+      .distinctUntilChanged()
+      .map(term => term.length < 1 ? []
+        : this.array.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10));
 
   focus() {
     this.oElement.nativeElement.focus();
@@ -132,6 +142,10 @@ export class AppComponent implements OnInit{
     window.open('https://weather.com/weather/today/l/'+this.zipcode+':4:US', '_blank');
   }
 
+  onEnter(value: string) {
+    window.open(this.map.get(value));
+  }
+
   setHotKeys() {
     this.hotkeyOpenNav = this._hotkeysService.add(new Hotkey('ctrl+`', (event: KeyboardEvent): boolean => {
       this.openNav();
@@ -150,6 +164,10 @@ export class AppComponent implements OnInit{
       data => {
         console.log(data);
         this.allLinks = data.links;
+        for (let site of this.allLinks) {
+          this.array.push(site.name);
+          this.map.set(site.name, site.url);
+        }
       },
       err => {
         console.error(err);

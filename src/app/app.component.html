@@ -2,12 +2,17 @@
     <div class="bg-photo" [style.background]="background"></div>
 
     <div class="links">
-        <div class="links-inner" (click)="toggleNav()">Links</div>
+        <div class="links-inner" (click)="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <input type="text" class="site-search form-control" #siteSearch name="query" (keyup.enter)="onEnter(siteSearch.value);oSearch = ''" [(ngModel)]="oSearch" [ngbTypeahead]="search" placeholder="Search..." autofocus>
     </div>
 
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-        <input type="text" class="search-input" #searchInput name="query" [(ngModel)]="query" placeholder="Search for..." autofocus>
+        <input type="text" class="search-input" #searchInput name="query" [(ngModel)]="query" placeholder="Filter...">
         <a href="{{data.url}}" class="{{data.class}}" target="_blank" *ngFor="let data of favorites | sort:'name' | filter : query" (click)="query = '';focus();">{{data.name}}</a>
         <a href="{{data.url}}" class="{{data.class}}" target="_blank" *ngFor="let data of allLinks | sort:'name' | filter : query" (click)="query = '';focus();">{{data.name}}</a>
     </div>
@@ -27,7 +32,7 @@
 
     <div class="weather">
         <div class="weather-inner">
-            <span *ngIf="dateObj" (click)="goToCalendar();">{{ dateObj.hours }}:{{ dateObj.minutes }}, {{ dateObj.dayOfWeek }}, {{ dateObj.month }} {{ dateObj.day }}, {{ dateObj.year }}</span><br>
+            <span *ngIf="dateObj" (click)="goToCalendar();" style="font-size:25px;">{{ dateObj.hours }}:{{ dateObj.minutes }}, {{ dateObj.dayOfWeek }}, {{ dateObj.month }} {{ dateObj.day }}, {{ dateObj.year }}</span><br>
             <span (click)="goToWeather();">{{city}}, {{state}}<canvas id="icon1" class="weather-icon" width="25" height="25"></canvas>{{ temp }}&deg;F</span><br>
             <span (click)="goToWeather();">{{conditions}} - {{windspeed}}mph winds</span>
         </div>
