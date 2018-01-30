@@ -28,7 +28,8 @@ export class AppComponent implements OnInit{
   allLinks: any;
   favorites: any;
   @ViewChild('searchInput') oElement;
-  @ViewChild('oSearch') oSearch;
+  @ViewChild('siteSearch') siteSearch;
+  oSearch: any;
   query: any;
   city: string;
   state: string;
@@ -138,6 +139,11 @@ export class AppComponent implements OnInit{
     window.open('https://calendar.google.com/calendar/r?tab=cc', '_blank');
   }
 
+  goToGoogle() {
+    window.open('https://www.google.com/', '_blank');
+    this.siteSearch.nativeElement.focus();
+  }
+
   goToWeather() {
     window.open('https://weather.com/weather/today/l/'+this.zipcode+':4:US', '_blank');
   }
@@ -224,6 +230,7 @@ export class AppComponent implements OnInit{
     document.getElementById("sidenav").style.width = "0";
     document.getElementById("page-wrapper").style.marginLeft = "0";
     this.isOpen = false;
+    this.siteSearch.nativeElement.focus();
   }
 
   private randomize() {

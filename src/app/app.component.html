@@ -7,7 +7,8 @@
             <div></div>
             <div></div>
         </div>
-        <input type="text" class="site-search form-control" #siteSearch name="query" (keyup.enter)="onEnter(siteSearch.value);oSearch = ''" [(ngModel)]="oSearch" [ngbTypeahead]="search" placeholder="Search..." autofocus>
+        <input type="text" class="site-search form-control" #siteSearch name="query" (keyup.enter)="onEnter(siteSearch.value);oSearch = ''" [(ngModel)]="oSearch" [ngbTypeahead]="search" placeholder="Go to..." autofocus>
+        <div class="g-logo" (click)="goToGoogle();"></div>
     </div>
 
     <div id="sidenav" class="sidenav">
