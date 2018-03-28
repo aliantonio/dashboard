@@ -149,7 +149,7 @@ export class AppComponent implements OnInit{
   }
 
   onEnter(value: string) {
-    window.open(this.map.get(value));
+    this.map.has(value) ? window.open(this.map.get(value)) : event.preventDefault();
   }
 
   setHotKeys() {
