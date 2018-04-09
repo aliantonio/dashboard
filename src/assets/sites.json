@@ -514,6 +514,16 @@
             "class":"non-header",
             "name":"Binance",
             "url":"https://www.binance.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Ford",
+            "url":"https://credit.ford.com/globalaccountmgr/glamWAR/restServlet/global/loginService/amo/fcus/US/en"
+        },
+        {
+            "class":"non-header",
+            "name":"Kohl's",
+            "url":"https://credit.kohls.com/eCustService/"
         }
  ]
 }
