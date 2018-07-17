@@ -98,7 +98,7 @@
         {
             "name":"Capital One",
             "class":"non-header",
-            "url":"https://www.capitalone.com/"
+            "url":"https://verified.capitalone.com/sic-ui/#/esignin"
         },
         {
             "class":"non-header",
@@ -148,7 +148,7 @@
         {
             "class":"non-header",
             "name":"NJNG",
-            "url":"http://www.njng.com/"
+            "url":"https://www.njng.com/"
         },
         {
             "class":"non-header",
@@ -398,7 +398,7 @@
         {
             "class":"non-header",
             "name":"Amazon",
-            "url":"http://www.smile.amazon.com/"
+            "url":"https://smile.amazon.com/"
         },
         {
             "class":"non-header",
