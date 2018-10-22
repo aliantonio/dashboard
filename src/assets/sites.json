@@ -524,6 +524,11 @@
             "class":"non-header",
             "name":"Kohl's",
             "url":"https://credit.kohls.com/eCustService/"
+        },
+        {
+            "class":"non-header",
+            "name":"Wells Fargo",
+            "url":"https://www.wellsfargo.com/"
         }
  ]
 }
