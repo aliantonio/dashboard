@@ -137,6 +137,12 @@ export class AppComponent implements OnInit{
 
   goToCalendar() {
     window.open('https://calendar.google.com/calendar/r?tab=cc', '_blank');
+    this.siteSearch.nativeElement.focus();
+  }
+
+  addReminder() {
+    window.open('https://www.google.com/search?source=hp&ei=PkcFXK8J4oT9BtfUu6AP&q=add+reminder&btnK=Google+Search&oq=add+reminder&gs_l=psy-ab.3..35i39l2j0l8.50.944..1102...0.0..1.260.1850.0j5j5......0....1..gws-wiz.......0i131j0i10.NUNo9zlJXSk', '_blank');
+    this.siteSearch.nativeElement.focus();
   }
 
   goToGoogle() {

@@ -31,6 +31,10 @@
         <span>Anthony Liantonio</span>
     </div>
 
+    <div class="add-reminder" (click)="addReminder();">
+        <span>Add Reminder</span>
+    </div>
+
     <div class="weather">
         <div class="weather-inner">
             <span *ngIf="dateObj" (click)="goToCalendar();" style="font-size:25px;">{{ dateObj.hours }}:{{ dateObj.minutes }}, {{ dateObj.dayOfWeek }}, {{ dateObj.month }} {{ dateObj.day }}, {{ dateObj.year }}</span><br>

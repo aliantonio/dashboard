@@ -68,6 +68,18 @@ html, body {
 	text-align: right;
 }
 
+.add-reminder {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 300;
+	color: #fff;
+    position: fixed; /*previously this was set to absolute*/
+    bottom: 0px;
+	left: 0px;
+	padding: 15px;
+	text-align: right;
+	cursor: pointer;
+}
+
 .weather, .links {
 	position: relative;
 	cursor: pointer;
