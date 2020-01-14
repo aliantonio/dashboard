@@ -22,8 +22,8 @@
         },
         {
             "class":"non-header",
-            "name":"Google+",
-            "url":"https://plus.google.com/u/0/"
+            "name":"Instagram",
+            "url":"https://www.instagram.com/"
         },
         {
             "class":"non-header",
@@ -77,11 +77,6 @@
         },
         {
             "class":"non-header",
-            "name":"Inbox",
-            "url":"https://inbox.google.com/"
-        },
-        {
-            "class":"non-header",
             "name":"Contacts",
             "url":"https://www.google.com/contacts/u/0/"
         },
@@ -107,11 +102,6 @@
         },
         {
             "class":"non-header",
-            "name":"Prudential",
-            "url":"http://www.prudential.com/myaccess"
-        },
-        {
-            "class":"non-header",
             "name":"Department of Education",
             "url":"http://www.osla.org/"
         },
@@ -124,11 +114,6 @@
             "class":"non-header",
             "name":"Bank of America",
             "url":"https://www.bankofamerica.com/onlinebanking/online-banking.go"
-        },
-        {
-            "class":"non-header",
-            "name":"ACS",
-            "url":"https://www.acs-education.com/CS/Jsp/general/home.jsp"
         },
         {
             "class":"non-header",
@@ -262,18 +247,8 @@
         },
         {
             "class":"non-header",
-            "name":"SecureSafe",
-            "url":"https://www.securesafe.com/apps/main.html#lang=en"
-        },
-        {
-            "class":"non-header",
             "name":"TeamViewer",
             "url":"https://login.teamviewer.com/Account/LogOn"
-        },
-        {
-            "class":"non-header",
-            "name":"IP Webcam",
-            "url":"http://asliantonio.ddns.net:1024"
         },
         {
             "class":"non-header",
@@ -307,11 +282,6 @@
         },
         {
             "class":"non-header",
-            "name":"DataTables",
-            "url":"http://datatables.net/"
-        },
-        {
-            "class":"non-header",
             "name":"Droid Forums",
             "url":"http://www.droidforums.net/"
         },
@@ -324,31 +294,6 @@
             "class":"non-header",
             "name":"Rootz Wiki",
             "url":"http://rootzwiki.com/news"
-        },
-        {
-            "class":"non-header",
-            "name":"DroidModderX",
-            "url":"http://droidmodderx.com/"
-        },
-        {
-            "class":"non-header",
-            "name":"AOKP",
-            "url":"http://aokp.co/"
-        },
-        {
-            "class":"non-header",
-            "name":"APKTOP",
-            "url":"http://www.iapktop.com/"
-        },
-        {
-            "class":"non-header",
-            "name":"My Color Screen",
-            "url":"http://mycolorscreen.com/"
-        },
-        {
-            "class":"non-header",
-            "name":"The Droid Effect",
-            "url":"http://thedroideffect.com/"
         },
         {
             "class":"non-header",
@@ -372,18 +317,8 @@
         },
         {
             "class":"non-header",
-            "name":"Torrentz",
-            "url":"https://www.torrentz.com/"
-        },
-        {
-            "class":"non-header",
             "name":"Isohunt",
             "url":"https://isohunt.to/"
-        },
-        {
-            "class":"non-header",
-            "name":"Codedamn Tutorials",
-            "url":"http://codedamn.com/"
         },
         {
             "class":"non-header",
@@ -447,18 +382,13 @@
         },
         {
             "class":"non-header",
-            "name":"Comcast Live TV",
-            "url":"https://xtv.comcast.net/"
+            "name":"Xfinity Stream",
+            "url":"https://www.xfinity.com/stream/"
         },
         {
             "class":"non-header",
             "name":"NFL Network",
             "url":"http://nflnonline.nfl.com/nflno/console.jsp"
-        },
-        {
-            "class":"non-header",
-            "name":"VIP Box",
-            "url":"http://vipbox.tv"
         },
         {
             "class":"non-header",
@@ -474,21 +404,6 @@
             "class":"non-header",
             "name":"Reason",
             "url":"http://reason.com/"
-        },
-        {
-            "class":"non-header",
-            "name":"Lew Rockwell",
-            "url":"http://lewrockwell.com/"
-        },
-        {
-            "class":"non-header",
-            "name":"Daily Paul",
-            "url":"http://www.dailypaul.com/"
-        },
-        {
-            "class":"non-header",
-            "name":"Libertarian Republic",
-            "url":"http://thelibertarianrepublic.com/"
         },
         {
             "class":"non-header",

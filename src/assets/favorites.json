@@ -29,6 +29,11 @@
             "class":"non-header",
             "name":"Android Police",
             "url":"http://www.androidpolice.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Instagram",
+            "url":"https://www.instagram.com/"
         }
     ]
 }
