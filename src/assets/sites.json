@@ -454,6 +454,16 @@
             "class":"non-header",
             "name":"Tautulli",
             "url":"http://asliantonio.dyndns.org:8181/home"
+        },
+        {
+            "class":"non-header",
+            "name":"Twitch",
+            "url":"https://www.twitch.tv/"
+        },
+        {
+            "class":"non-header",
+            "name":"Mixer",
+            "url":"https://mixer.com/"
         }
  ]
 }
