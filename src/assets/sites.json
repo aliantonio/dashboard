@@ -464,6 +464,11 @@
             "class":"non-header",
             "name":"Mixer",
             "url":"https://mixer.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Weather Channel",
+            "url":"https://weather.com/"
         }
  ]
 }

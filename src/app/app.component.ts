@@ -205,9 +205,20 @@ export class AppComponent implements OnInit{
     .subscribe(
       data => {
         console.log(data.results);
-        this.city = data.results[0].address_components[2].long_name;
-        this.state = data.results[0].address_components[5].short_name;
-        this.zipcode = data.results[0].address_components[6].short_name;
+        let results = data.results[0].address_components;
+        for ( let x of results ) {
+          if (x.types[0] == "postal_code") {
+            this.zipcode = x.long_name;
+          } else if (x.types[0] == "neighborhood") {
+            this.city = x.long_name;
+          } else if (x.types[0] == "locality") {
+            if (!this.city) {
+              this.city = x.long_name  
+            }
+          } else if (x.types[0] == "administrative_area_level_1") {
+            this.state = x.short_name;
+          }
+        }
       },
       err => {
         console.error(err);
