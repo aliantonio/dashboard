@@ -66,6 +66,7 @@ html, body {
 	right: 0px;
 	padding: 15px;
 	text-align: right;
+	cursor: pointer;
 }
 
 .add-reminder {

@@ -469,6 +469,11 @@
             "class":"non-header",
             "name":"Weather Channel",
             "url":"https://weather.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Windy",
+            "url":"https://windy.com/"
         }
  ]
 }

@@ -145,6 +145,11 @@ export class AppComponent implements OnInit{
     this.siteSearch.nativeElement.focus();
   }
 
+  goToGmail() {
+    window.open('https://mail.google.com/', '_blank');
+    this.siteSearch.nativeElement.focus();
+  }
+
   goToGoogle() {
     window.open('https://www.google.com/', '_blank');
     this.siteSearch.nativeElement.focus();
