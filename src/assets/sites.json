@@ -68,12 +68,12 @@
         {
             "class":"non-header",
             "name":"Maps",
-            "url":"https://www.google.com/maps/preview?authuser=0#!data=!1m4!1m3!1d102209!2d-74.3780251!3d40.5381495"
+            "url":"https://google.com/maps"
         },
         {
             "class":"non-header",
-            "name":"Music",
-            "url":"https://play.google.com/music/listen#/now"
+            "name":"Youtube Music",
+            "url":"https://music.youtube.com/"
         },
         {
             "class":"non-header",
@@ -147,11 +147,6 @@
         },
         {
             "class":"non-header",
-            "name":"Franklin Investments",
-            "url":"https://www.franklintempleton.com/retail/jsp_app/access/logout_expire_cookie.jsp"
-        },
-        {
-            "class":"non-header",
             "name":"Minnesota Life",
             "url":"https://service.minnesotalife.com/userservices/"
         },
@@ -212,18 +207,13 @@
         },
         {
             "class":"non-header",
-            "name":"CollabServ",
-            "url":"https://apps.na.collabserv.com/homepage/web/updates/#myStream/imFollowing/all"
+            "name":"Connections Cloud",
+            "url":"https://collaboration.wakefern.com/files/"
         },
         {
             "class":"non-header",
             "name":"SRFH Analytics",
             "url":"http://mofpany1:9080/analytics/console/dashboard"
-        },
-        {
-            "class":"non-header",
-            "name":"SRFH Community",
-            "url":"https://apps.na.collabserv.com/communities/service/html/communityview?communityUuid=e58ef8ac-5a0d-4871-b3f1-f3e2e5b7dffc"
         },
         {
             "class":"non-header",
@@ -272,16 +262,6 @@
         },
         {
             "class":"non-header",
-            "name":"jQuery API",
-            "url":"http://api.jquery.com/category/core/"
-        },
-        {
-            "class":"non-header",
-            "name":"jQuery UI",
-            "url":"http://jqueryui.com/"
-        },
-        {
-            "class":"non-header",
             "name":"Droid Forums",
             "url":"http://www.droidforums.net/"
         },
@@ -289,11 +269,6 @@
             "class":"non-header",
             "name":"XDA Developers",
             "url":"http://forum.xda-developers.com/index.php"
-        },
-        {
-            "class":"non-header",
-            "name":"Rootz Wiki",
-            "url":"http://rootzwiki.com/news"
         },
         {
             "class":"non-header",
@@ -319,11 +294,6 @@
             "class":"non-header",
             "name":"Isohunt",
             "url":"https://isohunt.to/"
-        },
-        {
-            "class":"non-header",
-            "name":"Angular Site",
-            "url":"https://docs.angularjs.org/tutorial/step_00"
         },
         {
             "class":"non-header",
@@ -402,11 +372,6 @@
         },
         {
             "class":"non-header",
-            "name":"Reason",
-            "url":"http://reason.com/"
-        },
-        {
-            "class":"non-header",
             "name":"AL Plex",
             "url":"http://asliantonio.com/plex/"
         },
@@ -462,11 +427,6 @@
         },
         {
             "class":"non-header",
-            "name":"Mixer",
-            "url":"https://mixer.com/"
-        },
-        {
-            "class":"non-header",
             "name":"Weather Channel",
             "url":"https://weather.com/"
         },
@@ -474,6 +434,26 @@
             "class":"non-header",
             "name":"Windy",
             "url":"https://windy.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"DesignsByD",
+            "url":"https://designsbyd.me/"
+        },
+        {
+            "class":"non-header",
+            "name":"DesignsByD Admin",
+            "url":"https://designsbyd.me/admin/"
+        },
+        {
+            "class":"non-header",
+            "name":"Finance",
+            "url":"https://finance.yahoo.com/"
+        },
+        {
+            "class":"non-header",
+            "name":"Fidelity Investments",
+            "url":"https://www.fidelity.com/"
         }
  ]
 }
